@@ -4,6 +4,8 @@
     This addons was made by Ov3rSimplified [https://github.com/Ov3rSimplified].
 
     Copyright (c) 2021 Ov3Simplified
+    
+    DONT REUPLOAD THIS!!! I want to help the GMOD Community!
 
     DO NOT EDIT ANYTHING HERE!!!!!
 */
