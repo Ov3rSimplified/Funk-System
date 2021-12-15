@@ -14,7 +14,8 @@ example:
     ["COMMAND"] = {                         // The command ( DONT USE "/" only the name.. the / was create automatically )
         Prefix = "[PREFIX]",                // The command Prefix
         PrefixColor = Color(255,255,255), // The color from the Prefix
-        TextColor = Color(255,255,255)    // The color from the Text
+        TextColor = Color(255,255,255),    // The color from the Text
+        EnableName = false
     }
 */
 
@@ -22,7 +23,8 @@ FS.Config.CreateCommand = {
     ["funk"] = {
         Prefix = "[FUNK]",
         PrefixColor = Color(250,0,0),
-        TextColor = Color(255,255,255)
+        TextColor = Color(255,255,255),
+        EnableName = false
     }
 } 
 
