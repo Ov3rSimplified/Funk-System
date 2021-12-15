@@ -1,7 +1,7 @@
+DarkRP.removeChatCommand("advert")
 function FS:LoadCommands()
 	for k, v in pairs(FS.Config.CreateCommand) do 
- 
-		DarkRP.removeChatCommand("advert")
+
 		DarkRP.declareChatCommand({ command = k, description = k..k, delay = 1.5 })
 		 
 		if SERVER then
