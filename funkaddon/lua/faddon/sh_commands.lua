@@ -1,6 +1,7 @@
 function FS:LoadCommands()
 	for k, v in pairs(FS.Config.CreateCommand) do 
- 
+		
+
 		DarkRP.removeChatCommand("advert")
 		DarkRP.declareChatCommand({ command = k, description = k..k, delay = 1.5 })
 		 
@@ -17,11 +18,11 @@ function FS:LoadCommands()
 					end
 					for kk,vv in pairs(player.GetAll()) do 
 						local col = team.GetColor(ply:Team()) 	
-						if FS.Config.EnableNames then
-							if FS.Config.EnableSuffix then 
-								DarkRP.talkToPerson(vv, v.PrefixColor, v.Prefix, v.TextColor, FS.Config.SuffixString..ply:Nick(), text, ply)
+						if v.EnableNames then 
+							if v.EnableSuffix then 
+								DarkRP.talkToPerson(vv, v.PrefixColor, v.Prefix, v.TextColor, v.SuffixString..ply:Nick().." "..text, ply)
 							else
-								DarkRP.talkToPerson(vv, v.PrefixColor, v.Prefix, v.TextColor, ply:Nick(), text, ply)
+								DarkRP.talkToPerson(vv, v.PrefixColor, v.Prefix, v.TextColor, ply:Nick().." "..text, ply)
 							end
 						else
 							DarkRP.talkToPerson(vv, v.PrefixColor, v.Prefix, v.TextColor, text, ply)		

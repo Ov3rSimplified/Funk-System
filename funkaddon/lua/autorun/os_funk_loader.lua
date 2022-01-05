@@ -11,6 +11,8 @@
 */
 
 FS = FS or {}
+FS.Config = FS.Config or {}
+FS.Config.CreateCommand = {}
 
 local function LoadFiles(dir)
     local files = file.Find(dir.. "/".. "*", "LUA")
